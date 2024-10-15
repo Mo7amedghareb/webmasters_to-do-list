@@ -1,0 +1,763 @@
+body{
+    background-color: rgb(201, 203, 205);
+    margin: 0px;
+}
+
+.container{
+    padding: 50px;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.description{
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: large;
+}
+
+.input{
+    margin-top: 0px;
+    width: 200px;
+    height: 40px;
+    padding: 5px;
+    margin-left: 50px;
+}
+.btnupdate{
+    height: 50px;
+    border-radius: 40px;
+    background-color:rgb(202, 188, 40);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+.h3title{
+    margin-left: 100px;
+}
+.add{
+    height: 50px;
+    border-radius: 40px;
+    background-color:green;
+    color: white;
+    font-weight: bold;
+    cursor: cell;
+}
+.upd{
+    font-weight: bold;
+    font-size: 20px;
+    background-color: yellow;
+    color: black;
+    padding: 2px 6px;
+    border-radius: 4px;
+    margin-left: 50%;
+    cursor: pointer;
+}
+.delall{
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    border-radius: 40px;
+    background-color:red;
+    color: white;
+    font-weight: bold;
+    margin-top: 2%;
+    font-size: larger;
+    cursor: pointer;
+}
+.tasks{
+    background-color: gray;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 20px;
+    
+}
+.tasks .task {
+    background-color: rgb(15, 15, 15);
+    color: white;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    padding-left: 50px;
+    font-size: x-large;
+    
+}
+.tasks .task:hover {
+    background-color: white;
+    color: black;
+}
+.tasks .task.done {
+    opacity: 0.5;
+    
+}
+.tasks .task span {
+    font-weight: bold;
+    font-size: 20px;
+    background-color: red;
+    color: rgb(255, 255, 255);
+    padding: 2px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.footerimg{
+    width: 100%;
+    margin-left: 0px;
+}
+
+/*mobiles*/
+@media(max-width:600px){
+    body{
+        background-color: rgb(201, 203, 205);
+        margin: 0px;
+    }
+    .container{
+        padding: 50px;
+        height: 100vh;
+        margin-bottom: 50px;
+    }
+    .description{
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: large;
+    }
+    .hthree{
+        display: flex;
+    }
+    .h3title{
+        margin-left: 10px;
+        font-size: smaller;
+    }
+    .h3id{
+        margin-left: 40px;
+        font-size: smaller;
+    }
+
+    .input{
+        margin-top: 0px;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    .myid{
+        margin-top: 0px;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    .add{
+        height: 30px;
+        border-radius: 40px;
+        background-color:green;
+        color: white;
+        font-weight: bold;
+        cursor: cell;
+    }
+    .btnupdate{
+        height: 30px;
+        border-radius: 40px;
+        background-color:rgb(202, 188, 40);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .upd{
+        font-weight: bold;
+        font-size: 10px;
+        background-color: yellow;
+        color: black;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-left: 50%;
+        cursor: pointer;
+    }
+    .delall{
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        border-radius: 40px;
+        background-color:red;
+        color: white;
+        font-weight: bold;
+        margin-top: 2%;
+        font-size: smaller;
+        cursor: pointer;
+    }
+    .tasks{
+        background-color: gray;
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .tasks .task {
+        background-color: rgb(15, 15, 15);
+        color: white;
+        padding: 5px;
+        margin: 2px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        font-size: large;
+        
+    }
+    .tasks .task:hover {
+        background-color: white;
+        color: black;
+    }
+    .tasks .task.done {
+        opacity: 0.5;
+        
+    }
+    .tasks .task span {
+        font-weight: bold;
+        font-size: 10px;
+        background-color: red;
+        color: rgb(255, 255, 255);
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 5px;
+    }
+    .footerimg{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+}
+
+/*tablets*/
+
+@media(min-width:600px){
+    body{
+        background-color: rgb(201, 203, 205);
+        margin: 0px;
+    }
+    .container{
+        padding: 50px;
+        height: 100vh;
+        margin-bottom: 50px;
+    }
+    .description{
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: large;
+    }
+    .hthree{
+        display: flex;
+    }
+    .h3title{
+        margin-left: 10px;
+        font-size: smaller;
+    }
+    .h3id{
+        margin-left: 40px;
+        font-size: smaller;
+    }
+
+    .input{
+        margin-top: 0px;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    .myid{
+        margin-top: 0px;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    .add{
+        height: 30px;
+        border-radius: 40px;
+        background-color:green;
+        color: white;
+        font-weight: bold;
+        cursor: cell;
+    }
+    .btnupdate{
+        height: 30px;
+        border-radius: 40px;
+        background-color:rgb(202, 188, 40);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .upd{
+        font-weight: bold;
+        font-size: 10px;
+        background-color: yellow;
+        color: black;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-left: 50%;
+        cursor: pointer;
+    }
+    .delall{
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        border-radius: 40px;
+        background-color:red;
+        color: white;
+        font-weight: bold;
+        margin-top: 2%;
+        font-size: small;
+        cursor: pointer;
+    }
+    .tasks{
+        background-color: gray;
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .tasks .task {
+        background-color: rgb(15, 15, 15);
+        color: white;
+        padding: 5px;
+        margin: 2px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        font-size: large;
+        
+    }
+    .tasks .task:hover {
+        background-color: white;
+        color: black;
+    }
+    .tasks .task.done {
+        opacity: 0.5;
+        
+    }
+    
+    .tasks .task span {
+        font-weight: bold;
+        font-size: 10px;
+        background-color: red;
+        color: rgb(255, 255, 255);
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .footerimg{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+/*medium devices*/
+@media(min-width:768px){
+    body{
+        background-color: rgb(201, 203, 205);
+        margin: 0px;
+    }
+    .container{
+        padding: 50px;
+        height: 100vh;
+        margin-bottom: 50px;
+    }
+    .description{
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: large;
+    }
+    .hthree{
+        display: flex;
+    }
+    .h3title{
+        margin-left: 10px;
+        font-size: smaller;
+    }
+    .h3id{
+        margin-left: 40px;
+        font-size: smaller;
+    }
+
+    .input{
+        margin-top: 0px;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    .myid{
+        margin-top: 0px;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    .add{
+        height: 30px;
+        border-radius: 40px;
+        background-color:green;
+        color: white;
+        font-weight: bold;
+        cursor: cell;
+    }
+    .btnupdate{
+        height: 30px;
+        border-radius: 40px;
+        background-color:rgb(202, 188, 40);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .upd{
+        font-weight: bold;
+        font-size: 10px;
+        background-color: yellow;
+        color: black;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-left: 50%;
+        cursor: pointer;
+    }
+    .delall{
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        border-radius: 40px;
+        background-color:red;
+        color: white;
+        font-weight: bold;
+        margin-top: 2%;
+        font-size: large;
+        cursor: pointer;
+    }
+    .tasks{
+        background-color: gray;
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .tasks .task {
+        background-color: rgb(15, 15, 15);
+        color: white;
+        padding: 5px;
+        margin: 2px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        font-size: large;
+        
+    }
+    .tasks .task:hover {
+        background-color: white;
+        color: black;
+    }
+    .tasks .task.done {
+        opacity: 0.5;
+        
+    }
+    
+    .tasks .task span {
+        font-weight: bold;
+        font-size: 10px;
+        background-color: red;
+        color: rgb(255, 255, 255);
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .footerimg{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+/*labtops*/
+@media(min-width:992px){
+    body{
+        background-color: rgb(201, 203, 205);
+        margin: 0px;
+    }
+    .container{
+        padding: 50px;
+        height: 100vh;
+        margin-bottom: 50px;
+    }
+    .description{
+        margin-bottom: 0px;
+        text-align: center;
+        font-size: large;
+    }
+    .hthree{
+        display: flex;
+    }
+    .h3title{
+        margin-left: 10px;
+        font-size: smaller;
+    }
+    .h3id{
+        margin-left: 40px;
+        font-size: smaller;
+    }
+
+    .input{
+        margin-top: 0px;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+        margin-left: 0px;
+    }
+    .myid{
+        margin-top: 0px;
+        width: 100px;
+        height: 20px;
+        padding: 5px;
+        margin-left: 5px;
+    }
+    .add{
+        height: 30px;
+        border-radius: 40px;
+        background-color:green;
+        color: white;
+        font-weight: bold;
+        cursor: cell;
+    }
+    .btnupdate{
+        height: 30px;
+        border-radius: 40px;
+        background-color:rgb(202, 188, 40);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .upd{
+        font-weight: bold;
+        font-size: 20px;
+        background-color: yellow;
+        color: black;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-left: 50%;
+        cursor: pointer;
+    }
+    .delall{
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        border-radius: 40px;
+        background-color:red;
+        color: white;
+        font-weight: bold;
+        margin-top: 2%;
+        font-size: larger;
+        cursor: pointer;
+    }
+    .tasks{
+        background-color: gray;
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .tasks .task {
+        background-color: rgb(15, 15, 15);
+        color: white;
+        padding: 5px;
+        margin: 2px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        padding-left: 10px;
+        font-size: large;
+        
+    }
+    .tasks .task:hover {
+        background-color: white;
+        color: black;
+    }
+    .tasks .task.done {
+        opacity: 0.5;
+        
+    }
+    .tasks .task span {
+        font-weight: bold;
+        font-size: 20px;
+        background-color: red;
+        color: rgb(255, 255, 255);
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .footerimg{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+/*large devices*/
+@media(min-width:1200px){
+    body{
+        background-color: rgb(201, 203, 205);
+        margin: 0px;
+    }
+    .container{
+        padding: 50px;
+        height: 100vh;
+        margin-bottom: 50px;
+    }
+    .description{
+        margin-bottom: 50px;
+        text-align: center;
+        font-size: larger;
+    }
+    .input{
+        margin-top: 0px;
+        width: 200px;
+        height: 40px;
+        padding: 5px;
+        margin-left: 50px;
+    }
+    .myid{
+        margin-top: 0px;
+        width: 200px;
+        height: 40px;
+        padding: 5px;
+        margin-left: 20px;
+    }
+    .btnupdate{
+        height: 50px;
+        border-radius: 40px;
+        background-color:rgb(202, 188, 40);
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .hthree{
+        display: flex;
+    }
+    .h3title{
+        margin-left: 100px;
+        font-size: larger;
+    }
+    .h3id{
+        margin-left: 100px;
+        font-size: larger;
+    }
+    .add{
+        height: 50px;
+        border-radius: 40px;
+        background-color:green;
+        color: white;
+        font-weight: bold;
+        cursor: cell;
+    }
+    .upd{
+        font-weight: bold;
+        font-size: 20px;
+        background-color: yellow;
+        color: black;
+        padding: 2px 6px;
+        border-radius: 4px;
+        margin-left: 50%;
+        cursor: pointer;
+    }
+    .delall{
+        text-align: center;
+        height: 50px;
+        width: 100%;
+        border-radius: 40px;
+        background-color:red;
+        color: white;
+        font-weight: bold;
+        margin-top: 2%;
+        font-size: larger;
+        cursor: pointer;
+    }
+    .tasks{
+        background-color: gray;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 20px;
+        
+    }
+    .tasks .task {
+        background-color: rgb(15, 15, 15);
+        color: white;
+        padding: 10px;
+        margin: 2px;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        padding-left: 50px;
+        font-size: x-large;
+        
+    }
+    .tasks .task:hover {
+        background-color: white;
+        color: black;
+    }
+    .tasks .task.done {
+        opacity: 0.5;
+        
+    }
+    .tasks .task span {
+        font-weight: bold;
+        font-size: 20px;
+        background-color: red;
+        color: rgb(255, 255, 255);
+        padding: 2px 6px;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-left: 10px;
+    }
+    .footerimg{
+        width: 100%;
+        margin-left: 0px;
+    }
+}

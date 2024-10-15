@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>to do list</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" style="height: fit-content;">
+        <h1 style="text-align: center;">Welcome to our to do list!</h1>
+        <div class="description">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et dolore quis voluptatibus quas, beatae id cum, repellat iste quasi culpa exercitationem rem provident, obcaecati eaque impedit laborum reprehenderit sapiente totam ratione quos? Quis repudiandae qui omnis, reprehenderit perspiciatis architecto voluptas consequatur, soluta quas, repellendus porro praesentium alias ipsum eaque quia! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur quibusdam eos, maiores odio porro minima numquam libero inventore debitis nesciunt ipsa nostrum quod, ullam rerum eaque et voluptas dignissimos velit! Magnam mollitia, eum sunt laborum dignissimos nobis placeat asperiores possimus accusamus officia quod at amet quae, fugiat ducimus adipisci sapiente.</p>
+        </div>
+        <div class="form">
+            <br>
+            <h1 style="color: red;">you should write your tasks respectively and delete from last to first</h1>
+            <div class="hthree">
+                <h3 class="h3title">Enter your task</h3>
+            </div>
+            
+            <input type="text" class="input">
+            <input type="submit" class="add" value="Add Task">
+            <button class="btnupdate" onclick="{btnupdatetask()}">Update</button><br>
+            <button class="delall" onclick="{deleteall()}" >delete all</button>
+        </div>
+        <div class="tasks"></div>
+    </div>   
+    <img class="footerimg" src="website-footer-2-20240628-2826926.webp" alt="">
+    <script src="javascript.js"></script>
+</body>
+</html>
